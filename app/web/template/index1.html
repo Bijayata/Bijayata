@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#BB8FCE">
+<h1><center>welcome to my page</center></h1>
+
+<a href="employee/show">show</a>
+
+{% if user.is_authenticated %}
+u r login<br>
+<a href="app7/logout">logout</a><br>
+{% else %}
+<a href="app5/sinup">sinum</a><br>
+<a href="app6/login">login</a>
+
+{% endif %}
+</body>
+</html>

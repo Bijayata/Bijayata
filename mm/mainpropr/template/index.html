@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welcome</h1>
+{% if st %}
+    <h1>show data</h1>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+        </tr>
+    </table>
+    {% for i in st%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.address}}</td>
+    </tr>
+
+    {% endfor %}
+{% else %}
+    <h1>no data</h1>
+{% endif %}<br>
+<a href="enrooll/signup">signup</a>
+</body>
+</html>

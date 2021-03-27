@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="emp" method="POST">
+    {% csrf_token %}
+    eid  <input type="text" name="user"><br>
+    e_name  <input type="text" name="fname"><br>
+    mailid  <input type="text" name="lname"><br>
+    contect  <input type="text" name="email"><br>
+
+    submit <input type="submit">
+
+</form>
+
+</body>
+</html>
